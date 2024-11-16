@@ -1,11 +1,18 @@
 "use strict";
 //*The line below will create a new instance of the XMLHttpRequest object:
-const xhr = new XMLHttpRequest();
+const anyNameButPickedxhr = new XMLHttpRequest();
 //*The line below will wait for her response:
-xhr.addEventListener('load', () => {
-    console.log(xhr.response);
+anyNameButPickedxhr.addEventListener('load', () => {
+    console.log(anyNameButPickedxhr.response);
 });
-//*The line bellow sets up the request:
-xhr.open('GET', 'https://supersimplebackend.dev');
-//*This sends the message:
-xhr.send();
+//*The lineS bellow sets up the request:---------------------------------
+//*This replies with text/plain:
+anyNameButPickedxhr.open('GET', 'https://supersimplebackend.dev');
+//*This replies with a JSON object:
+// anyNameButPickedxhr.open('GET', 'https://supersimplebackend.dev/products/first');
+//*This replies with am image:
+// anyNameButPickedxhr.open('GET', 'https://supersimplebackend.dev/images/apple.jpg');
+//*This replies with HTML:
+// anyNameButPickedxhr.open('GET', 'https://supersimplebackend.dev/documentation');
+//*This sends the message:----------------------------------------------
+anyNameButPickedxhr.send();
