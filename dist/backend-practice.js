@@ -1,11 +1,11 @@
 "use strict";
+//*The line below will create a new instance of the XMLHttpRequest object:
 const xhr = new XMLHttpRequest();
-//*This sents the message:
+//*The line below will wait for her response:
+xhr.addEventListener('load', () => {
+    console.log(xhr.response);
+});
+//*The line bellow sets up the request:
 xhr.open('GET', 'https://supersimplebackend.dev');
-// xhr.open('GET' as string, 'https://priapisman677.github.io/mother-load-practice-project/' as string);
 //*This sends the message:
 xhr.send();
-console.log('Test');
-console.log('Test2');
-console.log('Test3');
-console.log('Test4');

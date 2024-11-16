@@ -1,15 +1,19 @@
+
+//*The line below will create a new instance of the XMLHttpRequest object:
 const xhr: XMLHttpRequest = new XMLHttpRequest();
-//*This sents the message:
 
-xhr.open('GET', 'https://supersimplebackend.dev');
 
-// xhr.open('GET' as string, 'https://priapisman677.github.io/mother-load-practice-project/' as string);
+//*The line below will wait for her response:
+xhr.addEventListener('load', ()=>{
+  console.log(xhr.response)
+});
 
+//*The line bellow sets up the request:
+xhr.open('GET', 'https://supersimplebackend.dev')
 
 //*This sends the message:
 xhr.send();
 
-console.log('Test')
-console.log('Test2')
-console.log('Test3')
-console.log('Test4')
+
+
+
