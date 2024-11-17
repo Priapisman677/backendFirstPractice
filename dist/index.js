@@ -1,1 +1,2 @@
-import './backend-practice.js';
+"use strict";
+// import './backend-practice.js';
